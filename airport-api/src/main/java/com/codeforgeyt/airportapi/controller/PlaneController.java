@@ -1,6 +1,6 @@
 package com.codeforgeyt.airportapi.controller;
 
-import com.codeforgeyt.airportapi.service.PlaneService;
+import com.codeforgeyt.airportcore.service.PlaneService;
 import com.codeforgeyt.airportcore.model.PlaneDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
