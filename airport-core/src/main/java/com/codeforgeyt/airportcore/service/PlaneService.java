@@ -1,4 +1,4 @@
-package com.codeforgeyt.airportapi.service;
+package com.codeforgeyt.airportcore.service;
 
 import com.codeforgeyt.airportcore.model.PlaneDto;
 import org.springframework.stereotype.Service;
@@ -7,6 +7,6 @@ import org.springframework.stereotype.Service;
 public class PlaneService {
 
     public PlaneDto getPlane(){
-        return new PlaneDto("Jet Plane", 4);
+        return new PlaneDto("Jet Plane - Test 1", 4);
     }
 }
