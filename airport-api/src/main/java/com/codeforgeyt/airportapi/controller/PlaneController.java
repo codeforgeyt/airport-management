@@ -10,13 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api")
 public class PlaneController {
 
     @Autowired
     PlaneService planeService;
 
-    @GetMapping(value = "/planes")
+    @RequestMapping(value = "/api/planes", method = RequestMethod.Get)
     public ResponseEntity<PlaneDto> getPlane(){
         PlaneDto planeDto = planeService.getPlane();
         return new ResponseEntity<>(planeDto, HttpStatus.OK);
